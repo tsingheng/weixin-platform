@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+.front-navbar-top{border-top:5px solid #44b549;margin-bottom:0px;border-bottom:0px;}
+.front-navbar-top .navbar-right li a{padding-left:50px;padding-right:50px;}
+.slide-bg{width:100%;text-align:center;background-color:#090b1a;}
+.login-container{position:absolute;top:0px;left:0px;width:100%;}
+.login-panel{padding: 5px 35px 20px;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;box-shadow:3px 3px 5px rgba(0,0,0,0.5);-moz-box-shadow:3px 3px 5px rgba(0,0,0,0.5);-webkit-box-shadow:3px 3px 5px rgba(0,0,0,0.5);background-color:#FFF;margin-top:20px;}
+input.username,input.password{padding-left:46px;}
+input.username{border-bottom-left-radius:0px;border-bottom-right-radius:0px;}
+input.password{border-top-left-radius:0px;border-top:0px;border-top-right-radius:0px;}
+.login-help .checkbox{margin-top:0px;}
+.login-help{height:30px;}
+.login-btn{width:100%;margin-top:10px;}
+.front-navbar-top li.active a{background-color:#44b549;color:#fff;}

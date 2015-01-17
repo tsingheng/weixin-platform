@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+	<definition name="front.template" template="/WEB-INF/page/template/template-front.jsp"></definition>
+	
+	<definition name="front.login" extends="front.template">
+		<put-attribute name="content" value="/WEB-INF/page/login.jsp"/>
+	</definition>
+	
+</tiles-definitions>
