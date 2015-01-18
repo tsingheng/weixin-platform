@@ -38,6 +38,9 @@ public class OpenAccount extends BaseEntity<Long> {
     
     private String token;
     
+    @Index(name = "idx_open_account_uuid")
+    private String uuid;
+    
     @Column(name = "is_default")
     private Boolean isDefault;
     
@@ -114,6 +117,14 @@ public class OpenAccount extends BaseEntity<Long> {
 
 	public void setWeixinId(String weixinId) {
 		this.weixinId = weixinId;
+	}
+
+	public String getUuid() {
+		return uuid;
+	}
+
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
 	}
     
 }

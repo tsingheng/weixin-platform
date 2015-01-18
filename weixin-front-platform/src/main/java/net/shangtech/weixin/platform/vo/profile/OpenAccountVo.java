@@ -13,6 +13,12 @@ public abstract class OpenAccountVo implements Serializable {
 	
 	@NotNull
 	private String appkey;
+	
+	@NotNull
+	private String title;
+	
+	@NotNull
+	private String weixinId;
 
 	public String getAppid() {
 		return appid;
@@ -28,6 +34,22 @@ public abstract class OpenAccountVo implements Serializable {
 
 	public void setAppkey(String appkey) {
 		this.appkey = appkey;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getWeixinId() {
+		return weixinId;
+	}
+
+	public void setWeixinId(String weixinId) {
+		this.weixinId = weixinId;
 	}
 	
 }

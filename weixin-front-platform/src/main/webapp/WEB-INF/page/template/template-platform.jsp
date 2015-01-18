@@ -17,6 +17,7 @@
 		<script type="text/javascript" src="${jsPath}/js/bootstrap.js"></script>
 		<%-- <script type="text/javascript" src="${jsPath}/js/jquery.form.js"></script> --%>
 		<script type="text/javascript" src="${jsPath}/js/jquery.validate.js"></script>
+		<script type="text/javascript" src="${jsPath}/js/shangtech-framework.js"></script>
 		<script type="text/javascript">
 		var ctx = '${ctx}';
 		var imagePath = '${imagePath}';
