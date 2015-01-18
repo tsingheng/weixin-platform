@@ -10,4 +10,9 @@
 		<put-attribute name="content" value="/WEB-INF/page/profile/profile-main.jsp"/>
 	</definition>
 	
+	<definition name="platform.profile.account.new" extends="platform.template">
+        <put-attribute name="menu" value=""/>
+        <put-attribute name="content" value="/WEB-INF/page/profile/new-account.jsp"/>
+    </definition>
+	
 </tiles-definitions>

@@ -1,12 +1,14 @@
 package net.shangtech.weixin.member.entity;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.Index;
-
 import net.shangtech.framework.dao.support.BaseEntity;
+
+import org.hibernate.annotations.Index;
 
 /**
  * 微信公众账号
@@ -23,6 +25,11 @@ public class OpenAccount extends BaseEntity<Long> {
     @Column(name = "platform_member_id")
     private Long platformMemberId;
     
+    private String title;
+    
+    @Column(name = "weixin_id")
+    private String weixinId;
+    
     private String openid;
     
     private String appid;
@@ -30,6 +37,12 @@ public class OpenAccount extends BaseEntity<Long> {
     private String appkey;
     
     private String token;
+    
+    @Column(name = "is_default")
+    private Boolean isDefault;
+    
+    @Column(name = "create_time")
+    private Date createTime;
 
 	public Long getPlatformMemberId() {
 		return platformMemberId;
@@ -69,6 +82,38 @@ public class OpenAccount extends BaseEntity<Long> {
 
 	public void setToken(String token) {
 		this.token = token;
+	}
+
+	public Boolean getIsDefault() {
+		return isDefault;
+	}
+
+	public void setIsDefault(Boolean isDefault) {
+		this.isDefault = isDefault;
+	}
+
+	public Date getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getWeixinId() {
+		return weixinId;
+	}
+
+	public void setWeixinId(String weixinId) {
+		this.weixinId = weixinId;
 	}
     
 }

@@ -24,14 +24,13 @@ public class WeixinAuthenticationProvider implements AuthenticationProvider {
 			throw new BadCredentialsException("用户名或密码错误");
 		}
 		UsernamePasswordAuthenticationToken result = new UsernamePasswordAuthenticationToken(authentication.getPrincipal(), authentication.getCredentials(), user.getAuthorities());
-//		result.setDetails(user.get);
+		result.setDetails(authentication.getDetails());
 	    return result;
     }
 
 	@Override
     public boolean supports(Class<?> authentication) {
-	    // TODO Auto-generated method stub
-	    return false;
+	    return UsernamePasswordAuthenticationToken.class.equals(authentication);
     }
 
 }

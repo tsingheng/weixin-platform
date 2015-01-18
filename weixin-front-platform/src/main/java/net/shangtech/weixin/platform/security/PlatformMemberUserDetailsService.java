@@ -28,7 +28,7 @@ public class PlatformMemberUserDetailsService implements UserDetailsService {
 	    	throw new UsernameNotFoundException("用户名或密码错误");
 	    }
 	    List<GrantedAuthority> gas = new ArrayList<>();
-	    gas.add(new SimpleGrantedAuthority("WEIXIN_PLATFORM_MEMBER"));
+	    gas.add(new SimpleGrantedAuthority("ROLE_PLATFORM_MEMBER"));
 	    PlatformMemberUser user = new PlatformMemberUser(username, member.getPassword(), true, true, true, true, gas);
 	    user.setMember(member);
 	    return user;

@@ -73,8 +73,8 @@
 	    					<h3>登录</h3>
 	    					<form role="form" method="post" action="${ctx}/j_spring_security_check">
 	    						<div class="form-group">
-	    							<input type="text" class="form-control input-lg username" name="username" placeholder="邮箱/微信号/QQ号"/>
-	    							<input type="text" class="form-control input-lg password" name="password" placeholder="密码"/>
+	    							<input type="text" class="form-control input-lg username" name="j_username" placeholder="邮箱/微信号/QQ号"/>
+	    							<input type="password" class="form-control input-lg password" name="j_password" placeholder="密码"/>
 	    						</div>
 	    						<div class="login-help">
 	    							<div class="pull-left">
