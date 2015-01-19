@@ -18,6 +18,7 @@ import org.apache.http.params.CoreConnectionPNames;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 
+@SuppressWarnings("deprecation")
 public class HttpToolkit {
     private static HttpToolkit instance;
 

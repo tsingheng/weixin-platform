@@ -23,7 +23,7 @@ public class WeixinAuthenticationProvider implements AuthenticationProvider {
 		if(!authentication.getCredentials().toString().equals(user.getPassword())){
 			throw new BadCredentialsException("用户名或密码错误");
 		}
-		UsernamePasswordAuthenticationToken result = new UsernamePasswordAuthenticationToken(authentication.getPrincipal(), authentication.getCredentials(), user.getAuthorities());
+		UsernamePasswordAuthenticationToken result = new UsernamePasswordAuthenticationToken(user, authentication.getCredentials(), user.getAuthorities());
 		result.setDetails(authentication.getDetails());
 	    return result;
     }

@@ -42,6 +42,7 @@ public class UserProfileController {
 		AjaxResponse ajaxResponse = AjaxResponse.instance();
 		OpenAccount account = new OpenAccount();
 		BeanUtils.copyProperties(vo, account);
+		account.setPlatformMemberId(member.getId());
 		accountService.save(account);
 		ajaxResponse.setSuccess(true);
 		return ajaxResponse;

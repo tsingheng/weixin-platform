@@ -20,6 +20,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.aliyun.openservices</groupId>
+			<artifactId>aliyun-openservices</artifactId>
+			<version>OTS-2.0.4</version>
+		</dependency>
+		<dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-web</artifactId>
             <version>3.2.4.RELEASE</version>
@@ -43,11 +48,6 @@
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
             <version>1.4</version>
-        </dependency>
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>1.8.4</version>
         </dependency>
         <dependency>
             <groupId>net.shangtech</groupId>
