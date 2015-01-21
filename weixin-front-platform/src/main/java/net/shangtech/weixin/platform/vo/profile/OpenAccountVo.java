@@ -2,22 +2,22 @@ package net.shangtech.weixin.platform.vo.profile;
 
 import java.io.Serializable;
 
-import javax.validation.constraints.NotNull;
+import org.hibernate.validator.constraints.NotEmpty;
 
 public abstract class OpenAccountVo implements Serializable {
 	
 	private static final long serialVersionUID = -6897483907940498410L;
 
-	@NotNull
+	@NotEmpty
 	private String appid;
 	
-	@NotNull
+	@NotEmpty
 	private String appkey;
 	
-	@NotNull
+	@NotEmpty
 	private String title;
 	
-	@NotNull
+	@NotEmpty
 	private String weixinId;
 
 	public String getAppid() {

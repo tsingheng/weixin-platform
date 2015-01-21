@@ -29,8 +29,9 @@
 		</div>
 		<div class="control-group">
 			<div class="controls">
-				<input type="submit" value="确定" class="btn"/>
+				<input type="button" value="确定" class="btn submit"/>
 			</div>
 		</div>
 	</form>
 </div>
+<script type="text/javascript" src="${ctx}/js/profile/profile.js"></script>
